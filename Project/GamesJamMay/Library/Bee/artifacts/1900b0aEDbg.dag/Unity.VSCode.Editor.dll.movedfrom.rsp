@@ -2,6 +2,11 @@ Library\Bee\artifacts\movedfrom\UnityEditor.TestRunner.ref.dll_43904465334607738
 Library\Bee\artifacts\movedfrom\UnityEditor.UI.ref.dll_6750382132457868446.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.TestRunner.ref.dll_651978004708829639.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.UI.ref.dll_1879130396959814921.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.dll_1153084456642866383.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_16781523601820969932.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_15317559336529231.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_6844577372419079503.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_7884927365259500564.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Plastic.Antlr3.Runtime.dll_6121398868444545018.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.IonicZip.dll_13407240296351266281.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.YamlDotNet.dll_17905712414288177763.movedfrom
