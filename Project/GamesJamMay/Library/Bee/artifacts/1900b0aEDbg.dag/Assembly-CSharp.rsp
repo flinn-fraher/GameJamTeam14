@@ -334,7 +334,9 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/VSSettingsProvider.ref.dll"
+"Assets/HarryScripts/AISpawner.cs"
 "Assets/HarryScripts/AIWander.cs"
+"Assets/HarryScripts/MeshRandomiser.cs"
 "Assets/Unity/ConstraintSamples/Scripts/mParent.cs"
 "Assets/Unity/Info/Scripts/Readme.cs"
 -langversion:8.0

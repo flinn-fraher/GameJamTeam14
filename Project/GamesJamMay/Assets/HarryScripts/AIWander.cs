@@ -14,6 +14,7 @@ public class AIWander : MonoBehaviour
 	[SerializeField] private float walkPointRange;
 	[SerializeField] private Vector3 distanceToWalkPoint;
 	[SerializeField] private float rangeCheck = 2f;
+	[SerializeField] private Animator animator;
 	private Color color;
 	private void Awake()
 	{
@@ -31,6 +32,14 @@ public class AIWander : MonoBehaviour
 	}
 	private void Patrolling()
 	{
+		if (agent.velocity.magnitude > .1f)
+		{
+			animator.SetBool("Walking", true);
+		}
+		else
+		{
+			animator.SetBool("Walking", false);
+		}
 		if (!walkPointSet)
 		{
 			SearchWalkPoint();
@@ -64,6 +73,6 @@ public class AIWander : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = color;
-		Gizmos.DrawSphere(walkPoint, .2f);
+		Gizmos.DrawSphere(walkPoint, 1f);
 	}
 }
