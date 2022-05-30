@@ -9,14 +9,16 @@ public class Menu : MonoBehaviour
     bool isOpen=false;
     [SerializeField]
     bool isMuted = false;
-    [SerializeField]
-    bool isFullScreen = true;
+
 
     [SerializeField]
     List<Sprite> Icons = new List<Sprite>();
 
     [SerializeField]
     GameObject AudioSwitch;
+
+    [SerializeField]
+    GameObject Info;
 
     // Start is called before the first frame update
     void Start()
@@ -66,4 +68,14 @@ public class Menu : MonoBehaviour
     {
         Screen.fullScreen = !Screen.fullScreen;
     }
+
+    public void OpenH2PMenu()
+    {
+        Info.SetActive(true);
+    }
+    public void CloseH2PMenu()
+    {
+        Info.SetActive(false);
+    }
+
 }
