@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     [SerializeField]
     Animator anim;
     bool isOpen=false;
+    [SerializeField]
+    bool isMuted = false;
+    [SerializeField]
+    bool isFullScreen = true;
+
+    [SerializeField]
+    List<Sprite> Icons = new List<Sprite>();
+
+    [SerializeField]
+    GameObject AudioSwitch;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +46,24 @@ public class Menu : MonoBehaviour
             isOpen = true;
         }
 
+    }
+
+    public void Mute()
+    {
+        if (isMuted)
+        {
+            isMuted = false;
+            AudioSwitch.GetComponent<Image>().sprite = Icons[0];
+        }
+        else
+        {
+            isMuted = true;
+            AudioSwitch.GetComponent<Image>().sprite = Icons[1];
+        }
+    }
+
+    public void ChangeScreenSize()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
 }
