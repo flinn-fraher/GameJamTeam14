@@ -77,5 +77,9 @@ public class Menu : MonoBehaviour
     {
         Info.SetActive(false);
     }
+    public void Credits()
+    {
+        Application.OpenURL("https://linktr.ee/group14");
+    }
 
 }
